@@ -25,6 +25,7 @@ _Read this in other languages:_
 [_Bahasa Indonesia_](README.id-ID.md),
 [_Українська_](README.uk-UA.md),
 [_Arabic_](README.ar-AR.md),
+[_Tiếng Việt_](README.vi-VN.md),
 [_Deutsch_](README.de-DE.md)
 
 ## Struktury Danych
@@ -66,7 +67,7 @@ rozwiązania problemu.
 
 * **Matematyka**
   * `B` [Manipulacja Bitami](src/algorithms/math/bits) - ustaw / uzyskaj / aktualizuj / usuwaj bity, mnożenie / dzielenie przez dwa, tworzenie negatywów itp.
-  * `B` [Silna](src/algorithms/math/factorial)
+  * `B` [Silnia](src/algorithms/math/factorial)
   * `B` [Ciąg Fibonacciego](src/algorithms/math/fibonacci)
   * `B` [Test Pierwszorzędności](src/algorithms/math/primality-test) (metoda podziału na próby)
   * `B` [Algorytm Euclideana](src/algorithms/math/euclidean-algorithm) - obliczyć Największy Wspólny Dzielnik (GCD)

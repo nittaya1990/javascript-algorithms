@@ -22,6 +22,7 @@ _Read this in other languages:_
 [_Bahasa Indonesia_](README.id-ID.md),
 [_Українська_](README.uk-UA.md),
 [_Arabic_](README.ar-AR.md),
+[_Tiếng Việt_](README.vi-VN.md),
 [_Deutsch_](README.de-DE.md)
 
 *注意：这个项目仅用于学习和研究，**不是**用于生产环境。*
@@ -175,7 +176,7 @@ _Read this in other languages:_
   * `B` [快速算次方](src/algorithms/math/fast-powering)
   * `A` [排列](src/algorithms/sets/permutations) (有/无重复)
   * `A` [组合](src/algorithms/sets/combinations) (有/无重复)
-* **动态编程** - 使用以前找到的子解决方案构建解决方案
+* **动态规划(Dynamic programming)** - 使用以前找到的子解决方案构建解决方案
   * `B` [斐波那契数](src/algorithms/math/fibonacci)
   * `B` [跳跃游戏](src/algorithms/uncategorized/jump-game)
   * `B` [独特路径](src/algorithms/uncategorized/unique-paths)

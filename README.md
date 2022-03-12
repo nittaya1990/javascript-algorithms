@@ -1,5 +1,10 @@
 # JavaScript Algorithms and Data Structures
 
+> 🇺🇦 UKRAINE [IS BEING ATTACKED](https://twitter.com/MFA_Ukraine) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
+> - Help Ukraine via [National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
+> - Help Ukraine via [SaveLife](https://savelife.in.ua/en/donate/) fund
+> - More info on [war.ukraine.ua](https://war.ukraine.ua/)
+
 [![CI](https://github.com/trekhleb/javascript-algorithms/workflows/CI/badge.svg)](https://github.com/trekhleb/javascript-algorithms/actions?query=workflow%3ACI+branch%3Amaster)
 [![codecov](https://codecov.io/gh/trekhleb/javascript-algorithms/branch/master/graph/badge.svg)](https://codecov.io/gh/trekhleb/javascript-algorithms)
 
@@ -25,6 +30,7 @@ _Read this in other languages:_
 [_Bahasa Indonesia_](README.id-ID.md),
 [_Українська_](README.uk-UA.md),
 [_Arabic_](README.ar-AR.md),
+[_Tiếng Việt_](README.vi-VN.md),
 [_Deutsch_](README.de-DE.md)
 
 *☝ Note that this project is meant to be used for learning and researching purposes
@@ -102,6 +108,7 @@ a set of rules that precisely define a sequence of operations.
   * `A` [Combination Sum](src/algorithms/sets/combination-sum) - find all combinations that form specific sum
 * **Strings**
   * `B` [Hamming Distance](src/algorithms/string/hamming-distance) - number of positions at which the symbols are different
+  * `B` [Palindrome](src/algorithms/string/palindrome) - check if the string is the same in reverse
   * `A` [Levenshtein Distance](src/algorithms/string/levenshtein-distance) - minimum edit distance between two sequences
   * `A` [Knuth–Morris–Pratt Algorithm](src/algorithms/string/knuth-morris-pratt) (KMP Algorithm) - substring search (pattern matching)
   * `A` [Z Algorithm](src/algorithms/string/z-algorithm) - substring search (pattern matching)
@@ -156,6 +163,10 @@ a set of rules that precisely define a sequence of operations.
   * `B` [k-Means](src/algorithms/ml/k-means) - k-Means clustering algorithm
 * **Image Processing**
   * `B` [Seam Carving](src/algorithms/image-processing/seam-carving) - content-aware image resizing algorithm
+* **Statistics**
+  * `B` [Weighted Random](src/algorithms/statistics/weighted-random) - select the random item from the list based on items' weights
+* **Evolutionary algorithms**
+  * `A` [Genetic algorithm](https://github.com/trekhleb/self-parking-car-evolution) - example of how the genetic algorithm may be applied for training the self-parking cars
 * **Uncategorized**
   * `B` [Tower of Hanoi](src/algorithms/uncategorized/hanoi-tower)
   * `B` [Square Matrix Rotation](src/algorithms/uncategorized/square-matrix-rotation) - in-place algorithm
@@ -201,6 +212,7 @@ algorithm is an abstraction higher than a computer program.
   * `B` [Best Time To Buy Sell Stocks](src/algorithms/uncategorized/best-time-to-buy-sell-stocks) - divide and conquer and one-pass examples
   * `A` [Permutations](src/algorithms/sets/permutations) (with and without repetitions)
   * `A` [Combinations](src/algorithms/sets/combinations) (with and without repetitions)
+  * `A` [Maximum Subarray](src/algorithms/sets/maximum-subarray)
 * **Dynamic Programming** - build up a solution using previously found sub-solutions
   * `B` [Fibonacci Number](src/algorithms/math/fibonacci)
   * `B` [Jump Game](src/algorithms/uncategorized/jump-game)
@@ -272,6 +284,8 @@ rm -rf ./node_modules
 npm i
 ```
 
+Also make sure that you're using a correct Node version (`>=14.16.0`). If you're using [nvm](https://github.com/nvm-sh/nvm) for Node version management you may run `nvm use` from the root folder of the project and the correct version will be picked up.
+
 **Playground**
 
 You may play with data-structures and algorithms in `./src/playground/playground.js` file and write
@@ -300,15 +314,15 @@ Source: [Big O Cheat Sheet](http://bigocheatsheet.com/).
 
 Below is the list of some of the most used Big O notations and their performance comparisons against different sizes of the input data.
 
-| Big O Notation | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements  |
-| -------------- | ---------------------------- | ----------------------------- | ------------------------------- |
-| **O(1)**       | 1                            | 1                             | 1                               |
-| **O(log N)**   | 3                            | 6                             | 9                               |
-| **O(N)**       | 10                           | 100                           | 1000                            |
-| **O(N log N)** | 30                           | 600                           | 9000                            |
-| **O(N^2)**     | 100                          | 10000                         | 1000000                         |
-| **O(2^N)**     | 1024                         | 1.26e+29                      | 1.07e+301                       |
-| **O(N!)**      | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
+| Big O Notation | Type        | Computations for 10 elements | Computations for 100 elements | Computations for 1000 elements  |
+| -------------- | ----------- | ---------------------------- | ----------------------------- | ------------------------------- |
+| **O(1)**       | Constant    | 1                            | 1                             | 1                               |
+| **O(log N)**   | Logarithmic | 3                            | 6                             | 9                               |
+| **O(N)**       | Linear      | 10                           | 100                           | 1000                            |
+| **O(N log N)** | n log(n)    | 30                           | 600                           | 9000                            |
+| **O(N^2)**     | Quadratic   | 100                          | 10000                         | 1000000                         |
+| **O(2^N)**     | Exponential | 1024                         | 1.26e+29                      | 1.07e+301                       |
+| **O(N!)**      | Factorial   | 3628800                      | 9.3e+157                      | 4.02e+2567                      |
 
 ### Data Structure Operations Complexity
 
